@@ -16,7 +16,7 @@ function generateToken(user){
     const secret = secrets.jwSecret;
 
     const options = {
-        expiresIn: 1000 * 30
+        expiresIn: "30s"
     }
 
     return jwt.sign(payload, secret, options)
