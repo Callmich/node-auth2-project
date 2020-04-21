@@ -9,7 +9,7 @@ router.get('/', theAuthorizer, (req, res) => {
       .then(users => {
           res.json(users)
       })
-      .catch(error => res.send(error))
+      .catch(error => res.send("Error with Token"))
 })
 
 module.exports = router;
